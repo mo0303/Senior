@@ -5,17 +5,29 @@
 5. sudo service apache2 restart
 6. sudo mysql_secure_installation
 7. You will be asked Enter current password for root (type a secure password): press Enter
+
 	Type in Y and press Enter to Set root password
+	
 	Type in a password at the New password: prompt, and press Enter. Important: remember this root password, as you will need it later
+	
 	Type in Y to Remove anonymous users
+	
 	Type in Y to Disallow root login remotely
+	
 	Type in Y to Remove test database and access to it
+	
 	Type in Y to Reload privilege tables now
+	
 8. sudo mysql --user=root --password
-	> create user root@localhost identified by 'your_password';
-	> grant all privileges on *.* to root@localhost;
-	> FLUSH PRIVILEGES;
-	> exit;
+
+	 create user root@localhost identified by 'your_password';
+	 
+	 grant all privileges on *.* to root@localhost;
+	 
+	 FLUSH PRIVILEGES;
+	 
+	 exit;
+	 
 9. sudo apt install phpmyadmin -y 
 10. sudo phpenmod mysqli
 11. sudo service apache2 restart
