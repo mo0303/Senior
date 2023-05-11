@@ -38,9 +38,10 @@
 11. sudo service apache2 restart
 12. go to http://localhost/phpmyadmin
 13. enter user and password from 8.
-14. extract Vending_Machine.zip to path /var/www/html
-15. sudo cp vmproject.sql /home/pi/Desktop
-16. go to New and create database name 'vmproject'
-17. go to import and Browse file vmproject.sql
-18. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 8.)";
-19. open browser and go to localhost/index.php
+14. git clone https://github.com/mo0303/Senior.git
+15. extract Vending_Machine.zip to path /var/www/html
+16. sudo cp vmproject.sql /home/pi/Desktop
+17. go to New and create database name 'vmproject'
+18. go to import and Browse file vmproject.sql
+19. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 8.)";
+20. open browser and go to localhost/index.php
