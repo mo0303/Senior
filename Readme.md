@@ -1,4 +1,4 @@
-1. sudo apt update && sudo apt upgrade -y
+1. sudo apt update & sudo apt upgrade -y
 2. sudo apt install apache2 -y 
 3. sudo apt install php -y
 4. sudo apt install mariadb-server php-mysql -y
