@@ -22,6 +22,11 @@
 
 	 create user root@localhost identified by 'your_password';
 	 
+	 or
+	 
+	 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+
+
 	 grant all privileges on \*.\* to root@localhost;
 
 	 FLUSH PRIVILEGES;
