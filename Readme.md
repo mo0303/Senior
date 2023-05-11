@@ -20,28 +20,26 @@
 	
 8. sudo mysql --user=root --password
 
-	 create user root@localhost identified by 'your_password';
-	 
-	 or
-	 
-	 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
-
-
 	 grant all privileges on \*.\* to root@localhost;
 
 	 FLUSH PRIVILEGES;
 	 
 	 exit;
 	 
-9. sudo apt install phpmyadmin -y 
-10. sudo phpenmod mysqli
-11. sudo service apache2 restart
-12. go to http://localhost/phpmyadmin
-13. enter user and password from 8.
-14. git clone https://github.com/mo0303/Senior.git
-15. extract Vending_Machine.zip to path /var/www/html
-16. sudo cp vmproject.sql /home/pi/Desktop
-17. go to New and create database name 'vmproject'
-18. go to import and Browse file vmproject.sql
-19. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 8.)";
-20. open browser and go to localhost/index.php
+9. sudo apt install phpmyadmin -y
+   *select apache2
+   *'you_password'
+
+10. ALTER USER 'root'@'localhost' IDENTIFIED BY 'you_password';
+
+11. sudo phpenmod mysqli
+12. sudo service apache2 restart
+13. go to http://localhost/phpmyadmin
+14. enter user and password from 8.
+15. git clone https://github.com/mo0303/Senior.git
+16. extract Vending_Machine.zip to path /var/www/html
+17. sudo cp vmproject.sql /home/pi/Desktop
+18. go to New and create database name 'vmproject'
+19. go to import and Browse file vmproject.sql
+20. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 9.)";
+21. open browser and go to localhost/index.php
