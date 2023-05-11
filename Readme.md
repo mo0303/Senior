@@ -22,9 +22,9 @@
 
 	 create user root@localhost identified by 'your_password';
 	 
-	 grant all privileges on *.* to root@localhost;
+	" grant all privileges on *.* to root@localhost; "
 
-	 ##########grant all privileges on *.* to root@localhost;#########
+	 
 	 
 	 FLUSH PRIVILEGES;
 	 
