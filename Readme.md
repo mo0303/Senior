@@ -27,13 +27,18 @@
 	 exit;
 	 
 9. sudo apt install phpmyadmin -y
-   *select apache2
-   *'you_password'
 
-10. ALTER USER 'root'@'localhost' IDENTIFIED BY 'you_password';
+	 select apache2
 
-11. sudo phpenmod mysqli
-12. sudo service apache2 restart
+	 'you_password'
+
+
+10. sudo phpenmod mysqli
+11. sudo service apache2 restart
+12. sudo mysql --user=root --password
+
+	 ALTER USER 'root'@'localhost' IDENTIFIED BY 'you_password';
+
 13. go to http://localhost/phpmyadmin
 14. enter user and password from 8.
 15. git clone https://github.com/mo0303/Senior.git
@@ -43,3 +48,4 @@
 19. go to import and Browse file vmproject.sql
 20. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 9.)";
 21. open browser and go to localhost/index.php
+22. pip install rpi.gpio
