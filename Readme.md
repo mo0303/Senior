@@ -1,3 +1,7 @@
+You can see How to open project at 
+https://buacth-my.sharepoint.com/:f:/g/personal/puripat_ratt_bu_ac_th/Ej0LrKKr_6BFjP8fDiICc6sBnRa6Hc__AuPTe0_8hCsqRQ?e=bttvAX
+
+Open Terminal in Raspberry Pi
 1. sudo apt update & sudo apt upgrade -y
 2. sudo apt install apache2 -y 
 3. sudo apt install php -y
@@ -39,13 +43,13 @@
 
 	 ALTER USER 'root'@'localhost' IDENTIFIED BY 'you_password';
 
-13. go to http://localhost/phpmyadmin
+13. Open browser and go to http://localhost/phpmyadmin
 14. enter user and password from 8.
 15. git clone https://github.com/mo0303/Senior.git
 16. extract Vending_Machine.zip to path /var/www/html
 17. sudo cp vmproject.sql /home/pi/Desktop
-18. go to New and create database name 'vmproject'
+18. at http://localhost/phpmyadmin go to New and create database name 'vmproject'
 19. go to import and Browse file vmproject.sql
-20. go to dbConfig.php and edit $dbPassword = ""; to $dbPassword = "your_password(from 9.)";
+20. go to dbConfig.php file and edit $dbPassword = ""; to $dbPassword = "your_password(from 9.)";
 21. open browser and go to localhost/index.php
 22. pip install rpi.gpio
