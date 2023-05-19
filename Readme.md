@@ -51,5 +51,8 @@ Open Terminal in Raspberry Pi
 18. at http://localhost/phpmyadmin go to New and create database name 'vmproject'
 19. go to import and Browse file vmproject.sql
 20. go to dbConfig.php file and edit $dbPassword = ""; to $dbPassword = "your_password(from 9.)";
+21. if you want to use db on cloud 
+	you must rename dbConfig_on_cloud.php to dbConfig.php
 21. open browser and go to localhost/index.php
 22. pip install rpi.gpio
+
